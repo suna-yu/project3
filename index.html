@@ -16,10 +16,10 @@
         <div class="nav-bg">&nbsp;</div>
         <div class="nav-body">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">수수</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">예지家</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">연지家</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">공간</a></li>
+            <li class="nav-item"><a href="#susu" class="nav-link">수수</a></li>
+            <li class="nav-item"><a href="#house" class="nav-link">예지家</a></li>
+            <li class="nav-item"><a href="#house" class="nav-link">연지家</a></li>
+            <li class="nav-item"><a href="#place" class="nav-link">공간</a></li>
           </ul>
         </div>
     </nav>
@@ -31,9 +31,13 @@
         </div>
     </header>
     <main>
-        <section class="susu1">  
+        <section class="susu1" id="susu">  
             <div class="df">
-                <div class="visual"><img src="./source/susu1-2.jpg" alt="1"></div>
+                <div class="visual">
+                    <img src="./source/susu1-2.jpg" alt="1">
+                    <img src="./source/susu1-3.jpg" alt="2">
+                    <img src="./source/susu1-6.jpg" alt="2">
+                </div>
                 <div class="text">
                     <h6 class="df"><span>秀</span><span>手</span></h6>
                     <div class="text-up">
@@ -59,25 +63,29 @@
                         <a href="#">더보기</a>
                 </div>
                 <div class="visual df">
-                    <img src="./source/susu2-1.jpg" alt="1">
-                    <img src="./source/susu2-2.jpg" alt="1">
+                    <div><img src="./source/susu2-1.jpg" alt="1"></div>
+                    <div><img src="./source/susu2-2.jpg" alt="1"></div>
                 </div>
             </div>
         </section>
-        <div class="house df">
-            <div class="home yeji">
-                <div class="mask"><img src="./source/house1.jpg" alt="예지가"></div>
+        <div class="house" id="house">
+            <div class="borderBox"></div>
+            <div class="container df">
+                <div class="home yeji">
+                    <div class="mask"><img src="./source/house1.jpg" alt="예지가"></div>
+                </div>
+                <div class="second df">
+                    <div class="text">예지家</div>
+                    <div class="line"></div>
+                    <div class="text">연지家</div>
+                </div>
+                <div class="home yonji">
+                    <div class="mask"><img src="./source/house2.jpg" alt="연지가"></div>
+                </div>
             </div>
-            <div class="second df">
-                <div class="text">예지家</div>
-                <div class="line"></div>
-                <div class="text">연지家</div>
-            </div>
-            <div class="home yonji">
-                <div class="mask"><img src="./source/house2.jpg" alt="연지가"></div>
-            </div>
+            <div class="borderBox"></div>
         </div>
-        <div class="place">
+        <div class="place" id="place">
             <h5>마음을 담아</h5>
             <div class="container df">
                 <div class="box">
@@ -118,6 +126,9 @@
                 <div class="toggle-btn">더 보기</div>
                 <div class="line"></div>
             </div>
+        </div>
+        <div class="deco">
+
         </div>
     </main>
     <footer>
