@@ -352,14 +352,14 @@ header {
         bottom: 0;
     }
     .borderBox {
-        width: 50%;
+        width: 40.6%;
         height: 150rem;
         border-top: 1px solid $second;
         border-bottom: 1px solid $second;
         position: absolute;
         z-index: -1;
         @media (min-width: 1200px) {
-            height: 210rem;
+            height: 220rem;
         }
     }
     .borderBox:first-of-type {
@@ -465,5 +465,29 @@ header {
 }
 
 /* ====================================
-    ======= 꾸밈 ======    
+    ======= footer ======    
 ==================================== */
+footer {
+    display: flex;
+    background: url(../source/hanji.png);
+    position: relative;
+    .txt {
+        flex: 1 0 0;
+        line-height: 1.7;
+        position: relative;
+        padding-top: 5rem;
+        padding-left: 2rem;
+        text-align: center;
+        > img {
+            position: absolute;
+            right: 0;
+        }
+    }
+    #map {
+        flex: 1 0 0;
+        width: 100%;
+        max-width: 70rem;
+        height: 100%;
+        max-height: 50rem;
+    }
+}

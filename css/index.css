@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #F2EDEA;
 }
@@ -49,14 +48,13 @@ header {
 }
 @media (min-width: 1600px) {
   .place {
-    height: 50vw;
+    height: 60vw;
   }
 }
 
 footer {
   width: 100%;
   height: 50rem;
-  background-color: grey;
 }
 
 .nav {
@@ -432,7 +430,7 @@ header .header-text-sub {
   bottom: 0;
 }
 .house .borderBox {
-  width: 50%;
+  width: 40.6%;
   height: 150rem;
   border-top: 1px solid #8B634B;
   border-bottom: 1px solid #8B634B;
@@ -441,7 +439,7 @@ header .header-text-sub {
 }
 @media (min-width: 1200px) {
   .house .borderBox {
-    height: 210rem;
+    height: 220rem;
   }
 }
 .house .borderBox:first-of-type {
@@ -562,5 +560,29 @@ header .header-text-sub {
 }
 
 /* ====================================
-    ======= 꾸밈 ======    
-==================================== *//*# sourceMappingURL=index.css.map */
+    ======= footer ======    
+==================================== */
+footer {
+  display: flex;
+  background: url(../source/hanji.png);
+  position: relative;
+}
+footer .txt {
+  flex: 1 0 0;
+  line-height: 1.7;
+  position: relative;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  text-align: center;
+}
+footer .txt > img {
+  position: absolute;
+  right: 0;
+}
+footer #map {
+  flex: 1 0 0;
+  width: 100%;
+  max-width: 70rem;
+  height: 100%;
+  max-height: 50rem;
+}/*# sourceMappingURL=index.css.map */
