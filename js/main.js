@@ -1,3 +1,9 @@
+// 팝업메시지
+const pop = $('.popup');
+$('.popup .close').on('click', function(){
+    $(pop).hide();
+});
+
 // nav 
 $('.nav-link').on('click', () => {
     $('#nav-toggle').prop('checked', false);
