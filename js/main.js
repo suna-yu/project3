@@ -9,6 +9,36 @@ $('.nav-link').on('click', () => {
     $('#nav-toggle').prop('checked', false);
 })
 
+// header
+let slide = $('header .visual img');
+let current = 0;
+
+slide.each((i, o) => {
+    $(o).css('left', i * 100 +'%');
+});
+
+function slideFn() {
+    let prev = slide.eq(current);
+    move(prev, 0, '-100%');
+    current++; 
+    if (current == slide.length) {
+        current = 0;
+    }; 
+ 
+    let next = slide.eq(current); 
+    move(next, '100%', 0); 
+}
+
+function move(tg, start, end){
+    tg.css('left', start).stop().animate({left: end}, 1000);
+}
+
+
+// 간격실행
+setInterval(function() {
+    slideFn();
+}, 4000);
+
 // susu1 
 const susu1 = $('.susu1 .visual img');
 let idx = 0;
@@ -23,7 +53,7 @@ function fadeSilde() {
 fadeSilde();
 setInterval(() => {
     fadeSilde();
-}, 5000);
+}, 3000);
 
 // susu2 
 $('.susu2 .visual > div:first-child').css('flex-grow', '1');
