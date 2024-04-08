@@ -12,6 +12,9 @@ header {
     @media (max-width: 1000px) {
         height: 80rem;
     }
+    @include rp('mob') {
+        height: 130rem;
+    }
 }
 .susu2 {
     width: 100%;
@@ -19,6 +22,7 @@ header {
     @media (max-width: 1000px) {
         height: 80rem;
     }
+    @include rp('mob') {height: 130rem;}
     
 }
 

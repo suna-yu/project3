@@ -181,6 +181,7 @@ header {
         overflow: hidden;
         img {
             width: 100%;
+            height: 100%;
             object-fit: cover;
             object-position: center center;
             position: absolute;
@@ -240,6 +241,22 @@ header {
     }
     .text:before {margin-bottom: 2rem;}
     .text:after {margin-top: 2rem;}
+}
+.susu1 {
+    @include rp('mob') {
+        .df {
+            flex-direction: column;
+            .visual {
+                width: 70vw;
+                height: 70vw;
+                margin: auto;
+                margin-bottom: 5rem;
+            }
+            .text {
+                padding-left: 30%;
+            }
+        }
+    }
 }
 
 /* ====================================
@@ -309,6 +326,24 @@ header {
     }
     .text:before {margin-bottom: 2rem;}
     .text:after {margin-top: 2rem;}
+}
+.susu2 {
+    @include rp('mob') {
+        .df {
+            flex-direction: column;
+        }
+        .text {
+            position: absolute;
+            top: 70rem;
+            width: 80%;
+        }
+        .visual {
+            flex-direction: row;
+            position: absolute;
+            width: 80%;
+            right: 0;
+        }
+    }
 }
 
 /* ====================================
